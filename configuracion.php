@@ -11,7 +11,7 @@ $dbpass = '';//contraseña para la base de datos
 $con = new mysqli("localhost", "root", "", "megacursos"); //conexion a base de datos
 	$con->query("SET CHARACTER SET utf8");
 	if (mysqli_connect_errno()) {
-	die("No se puede conectar a la base de datos:" . mysqli_connect_error());
+	die("No se puede conectar a la base de datos: ".mysqli_connect_error());
 	}
 
 //comenzar session
